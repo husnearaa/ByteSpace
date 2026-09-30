@@ -5,22 +5,33 @@ import HeroBg from "@/assets/images/HeroImg.png";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[600px] w-full overflow-hidden">
-      {/* Background Image */}
-        <div>
+      {/* Background Image - Mobile */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src={HeroBg}
+          alt="ByteSpace hero background"
+          fill
+          priority
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      {/* Background Image - Tablet/Desktop */}
+      <div className="hidden md:block">
         <Image
           src={HeroBg}
           alt="ByteSpace hero background"
           width={1200}
           height={600}
-          priority 
+          priority
           className="h-full w-full object-cover"
         />
       </div>
 
       {/* Hero Content - Top Center */}
       <div className="absolute inset-0 flex items-start justify-center">
-        <div className="w-full max-w-3xl px-6 md:pt-24 pt-18 text-center">
-          <h1 className="text-balance md:text-4xl text-lg font-bold leading-tight text-white lg:text-6xl">
+        <div className="w-full max-w-3xl px-6 text-center pt-24">
+          <h1 className="text-balance text-lg font-bold leading-tight text-white md:text-4xl lg:text-6xl">
             Get Access to Hundreds Courses Available
           </h1>
 
