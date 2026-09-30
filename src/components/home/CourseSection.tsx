@@ -244,15 +244,14 @@ const CourseCard = ({ course }: CourseCardProps) => {
             </h3>
 
             <p className="text-[12px] text-[#8D91A0]">
-              by{" "}
-              <span className="text-[#4266DB]">{course.instructor}</span>
+              by <span className="text-[#4266DB]">{course.instructor}</span>
             </p>
           </div>
 
-        <div className="flex shrink-0 items-center gap-1 pt-2 text-[18px] text-[#4F4F4F] -translate-y-4">
-  <span className="font-light">{course.rating}</span>
-  <span className="text-[24px] font-medium text-[#C7C9CE]">★</span>
-</div>
+          <div className="flex shrink-0 items-center gap-1 pt-2 text-[18px] text-[#4F4F4F] -translate-y-4">
+            <span className="font-light">{course.rating}</span>
+            <span className="text-[24px] font-medium text-[#C7C9CE]">★</span>
+          </div>
         </div>
 
         {/* Level + Students */}
@@ -274,9 +273,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
               <path d="M19 20V7" />
             </svg>
 
-            <span className="text-[11px] text-[#656872]">
-              {course.level}
-            </span>
+            <span className="text-[11px] text-[#656872]">{course.level}</span>
           </div>
 
           {/* Avatars */}
@@ -308,9 +305,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
             ${course.price}
           </span>
 
-          <span className="pb-[1px] text-[11px] text-[#979AA3]">
-            /Lifetime
-          </span>
+          <span className="pb-[1px] text-[11px] text-[#979AA3]">/Lifetime</span>
         </div>
       </div>
     </article>
