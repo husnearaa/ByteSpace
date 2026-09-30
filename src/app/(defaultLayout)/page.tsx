@@ -1,4 +1,5 @@
-import HeroSection from "@/components/Home/HeroSection";
+import HeroSection from "@/components/home/HeroSection";
+
 
 
 const HomePage = () => {
