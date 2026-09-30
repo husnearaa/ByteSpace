@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { Lexend_Deca } from "next/font/google";
 
-
-const roboto = Roboto({
+const lexendDeca = Lexend_Deca({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
 export const metadata: Metadata = {
   title: "ByteSpace",
-  description: "ByteSpace",
+   icons: {
+    icon: "/logo.png",
+  },
+  description:
+    "ByteSpace is a platform that allows you to create and share your own AI-powered applications. You can build apps using our no-code interface, or you can use our API to integrate AI into your existing applications.",
 };
 
 export default function RootLayout({
@@ -20,15 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${roboto.className} antialiased`}
-        suppressHydrationWarning
-      >
+    <html lang="en">
+      <body className={`${lexendDeca.className} antialiased`}>
         <Toaster position="bottom-right" richColors />
-      {children}
+
+        {children}
       </body>
     </html>
   );
 }
-
