@@ -208,7 +208,7 @@ type CourseCardProps = {
 
 const CourseCard = ({ course }: CourseCardProps) => {
   return (
-    <article className="group overflow-hidden rounded-[14px] border border-[#DDE0E5] bg-white md:py-[14px] transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+    <article className="group overflow-hidden rounded-[14px] border border-[#DDE0E5] bg-white md:p-[14px] p-[8px]  transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
       {/* Image */}
       <div className="relative h-[200px] w-full overflow-hidden rounded-[9px]">
         <Image
@@ -220,15 +220,15 @@ const CourseCard = ({ course }: CourseCardProps) => {
 
         {/* Image bottom information */}
         <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
-          <span className="rounded-full bg-white/70 px-2 py-[4px] text-[11px] font-medium text-[#4F4F4F] backdrop-blur-sm">
+          <span className="rounded-full bg-white/70 px-2 py-[4px] md:text-[11px] text-[8px] font-medium text-[#4F4F4F] backdrop-blur-sm">
             {course.lessons} Lessons
           </span>
 
-          <span className="rounded-full bg-white/70 px-2 py-[4px] text-[11px] font-medium text-[#4F4F4F] backdrop-blur-sm">
+          <span className="rounded-full bg-white/70 px-2 py-[4px] md:text-[11px] text-[8px] font-medium text-[#4F4F4F] backdrop-blur-sm">
             {course.duration}
           </span>
 
-          <span className="rounded-full bg-white/70 px-2 py-[4px] text-[11px] font-medium text-[#4F4F4F] backdrop-blur-sm">
+          <span className="rounded-full bg-white/70 px-2 py-[4px] md:text-[11px] text-[8px] font-medium text-[#4F4F4F] backdrop-blur-sm">
             {course.comments} Comments
           </span>
         </div>
@@ -239,7 +239,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
         {/* Title + Rating */}
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
-            <h3 className="truncate text-[18px] font-semibold leading-5 text-[#10131F]">
+            <h3 className="truncate md:text-[18px] text-[16px] font-semibold leading-5 text-[#10131F]">
               {course.title}
             </h3>
 
@@ -265,7 +265,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              className="text-[#6D717A] width-6 h-6"
+              className="text-[#6D717A] md:w-6 md:h-6 w-4 h-4"
             >
               <path d="M4 20V10" />
               <path d="M9 20V4" />
@@ -273,7 +273,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
               <path d="M19 20V7" />
             </svg>
 
-            <span className="text-[11px] text-[#656872]">{course.level}</span>
+            <span className="md:text-[11px] text-[9px] text-[#656872]">{course.level}</span>
           </div>
 
           {/* Avatars */}
@@ -281,7 +281,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
             {avatars.map((avatar, index) => (
               <div
                 key={index}
-                className="-ml-1.5 h-8 w-8 overflow-hidden rounded-full first:ml-0"
+                className="-ml-1.5 md:h-8 md:w-8 w-6 h-6 overflow-hidden rounded-full first:ml-0"
               >
                 <Image
                   src={avatar}
@@ -293,7 +293,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
               </div>
             ))}
 
-            <span className="ml-[-2px] flex h-8 min-w-8 items-center justify-center rounded-full bg-[#C7FF00] px-1 text-[10px] font-normal text-[#253000]">
+            <span className="ml-[-2px] flex md:h-8 md:min-w-8 h-6 w-6 items-center justify-center rounded-full bg-[#C7FF00] px-1 text-[10px] font-normal text-[#253000]">
               {course.students}+
             </span>
           </div>
