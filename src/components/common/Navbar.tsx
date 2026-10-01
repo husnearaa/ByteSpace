@@ -33,21 +33,21 @@ function Logo() {
   );
 }
 
-function GridLines() {
-  return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 grid grid-cols-4 lg:grid-cols-12"
-    >
-      {Array.from({ length: 12 }).map((_, i) => (
-        <div
-          key={i}
-          className={`border-l border-white/15 ${i >= 4 ? "hidden lg:block" : ""}`}
-        />
-      ))}
-    </div>
-  );
-}
+// function GridLines() {
+//   return (
+//     <div
+//       aria-hidden="true"
+//       className="pointer-events-none absolute inset-0 grid grid-cols-4 lg:grid-cols-12"
+//     >
+//       {Array.from({ length: 12 }).map((_, i) => (
+//         <div
+//           key={i}
+//           className={`border-l border-white/15 ${i >= 4 ? "hidden lg:block" : ""}`}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-transparent">
       <div className="relative h-16 border-x border-white/15">
-        <GridLines />
+        {/* <GridLines /> */}
 
         {/* Desktop: content aligned to the 12-column grid */}
         <div className="relative hidden h-full grid-cols-12 items-center lg:grid">
