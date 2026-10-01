@@ -1,3 +1,4 @@
+import CommunityTestimonials from "@/components/home/CommunityTestimonials";
 import CourseCategories from "@/components/home/CourseCategories";
 import CourseSection from "@/components/home/CourseSection";
 import CreatorCTA from "@/components/home/CreatorCTA";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <CourseCategories />
       <ProfessionalGrowth />
       <CreatorCTA />
+      <CommunityTestimonials />
     </div>
   );
 };
