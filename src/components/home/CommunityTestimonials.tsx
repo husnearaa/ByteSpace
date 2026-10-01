@@ -56,9 +56,9 @@ const CommunityTestimonials = () => {
 
       <div className="relative z-10 mx-auto w-full max-w-[1200px] px-6 py-14 md:px-10 md:py-16 lg:px-12 lg:py-20">
         {/* Header */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:gap-20 py-8">
           <div>
-            <h2 className="max-w-[390px] text-[30px] font-bold leading-[1.15] text-[#050505] sm:text-[34px] md:text-[36px]">
+            <h2 className="max-w-[490px] text-[30px] font-semibold leading-[1.15] text-[#050505] sm:text-[34px] md:text-[42px]">
               Discover What Our
               <br />
               Community Is Saying
@@ -66,7 +66,7 @@ const CommunityTestimonials = () => {
           </div>
 
           <div>
-            <p className="max-w-[440px] text-[12px] leading-[1.7] text-[#555555] sm:text-[13px] md:text-[14px]">
+            <p className="max-w-[540px] text-[12px] leading-[1.7] text-[#6d6d6d] md:text-[16px]">
               At ByteSpace, our vibrant community of learners and creators is
               at the heart of what we do. Hear directly from those who have
               experienced the transformative journey of learning and creating
@@ -77,7 +77,7 @@ const CommunityTestimonials = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.id}
@@ -90,23 +90,23 @@ const CommunityTestimonials = () => {
                   alt={testimonial.name}
                   width={56}
                   height={56}
-                  className="h-14 w-14 rounded-full object-cover"
+                  className="h-18 w-18 rounded-full object-cover"
                 />
               </div>
 
               {/* Name + Role */}
               <div className="mt-4">
-                <h3 className="text-[14px] font-semibold leading-5 text-[#111111]">
+                <h3 className="text-[14px] md:text-[20px] font-semibold leading-5 text-[#111111]">
                   {testimonial.name}
                 </h3>
 
-                <p className="mt-0.5 text-[11px] font-normal text-[#0047FF]">
+                <p className="mt-0.5 text-[11px] md:text-[16px] font-light text-[#1557ff]">
                   {testimonial.role}
                 </p>
               </div>
 
               {/* Review */}
-              <p className="mt-5 text-[12px] font-normal leading-[1.7] text-[#666666]">
+              <p className="mt-5 text-[12px] md:text-[16px] font-normal leading-[1.7] text-[#818181]">
                 {testimonial.review}
               </p>
             </article>
