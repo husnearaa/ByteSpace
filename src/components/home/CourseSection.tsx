@@ -143,13 +143,13 @@ const CourseSection = () => {
       <div className="mx-auto w-full max-w-6xl px-4">
         {/* Header */}
         <div className="mx-auto max-w-6xl  text-center">
-          <h2 className="text-2xl font-semibold leading-[1.15] tracking-tight text-[#080D21] md:text-[42px]">
+          <h2 className="text-xl font-semibold leading-[1.15] tracking-tight text-[#080D21] md:text-3xl lg:text-[42px]">
             Discover Your Passion,
             <br />
             Build Your Skills
           </h2>
 
-          <p className="mt-4 text-[11px] leading-[25px] text-[#82868E] font-light md:text-base">
+          <p className="mt-4 text-[12px] leading-[25px] text-[#82868E] font-light md:text-base">
             At Bytespace Courses, we bring you closer to life-changing
             knowledge. Explore a variety of courses across different
             <br className="hidden md:block" />
@@ -159,7 +159,7 @@ const CourseSection = () => {
         </div>
 
         {/* Skills */}
-        <div className="mx-auto mt-6 flex max-w-6xl flex-wrap justify-center gap-3">
+        <div className="mx-auto mt-6 flex max-w-5xl flex-wrap justify-center gap-3">
           {skills.map((skill) => {
             const isFeatured = skill.name === "Featured";
 
@@ -208,7 +208,7 @@ type CourseCardProps = {
 
 const CourseCard = ({ course }: CourseCardProps) => {
   return (
-    <article className="group overflow-hidden rounded-[14px] border border-[#DDE0E5] bg-white p-[14px] transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+    <article className="group overflow-hidden rounded-[14px] border border-[#DDE0E5] bg-white md:py-[14px] transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
       {/* Image */}
       <div className="relative h-[200px] w-full overflow-hidden rounded-[9px]">
         <Image

@@ -20,13 +20,13 @@ const CreatorCTA = () => {
 {/* Content */}
 <div className="relative z-10 mt-8 mx-auto flex min-h-[275px] w-full max-w-[1200px] items-center justify-center px-5 py-12">
   <div className="w-full max-w-[1000px] text-center">
-    <h2 className="text-[25px] font-semibold leading-[1.2] text-white md:text-[32px] lg:text-[42px]">
+    <h2 className="text-xl font-semibold leading-[1.2] text-white md:text-[32px] lg:text-[42px]">
       Unlock Your Potential as a
       <br />
       Creator with ByteSpace
     </h2>
 
-    <p className="mx-auto mt-12 max-w-[950px] text-[10px] font-light leading-[1.7] text-white/90 md:text-[12px] lg:text-[16px]">
+    <p className="mx-auto mt-12 max-w-[950px] text-[13px] font-light leading-[1.7] text-white/90 md:text-[14px] lg:text-[16px]">
       Experience the collaboration of numerous creators and an expanding
       selection of courses. Register now and become a part of a
       community comprising over 10,000 local and international

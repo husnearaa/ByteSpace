@@ -58,7 +58,7 @@ const CommunityTestimonials = () => {
         {/* Header */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:gap-20 py-8">
           <div>
-            <h2 className="max-w-[490px] text-[30px] font-semibold leading-[1.15] text-[#050505] sm:text-[34px] md:text-[42px]">
+            <h2 className="max-w-[490px] text-xl font-semibold leading-[1.15] text-[#050505] md:text-3xl lg:text-[42px]">
               Discover What Our
               <br />
               Community Is Saying
@@ -66,7 +66,7 @@ const CommunityTestimonials = () => {
           </div>
 
           <div>
-            <p className="max-w-[540px] text-[12px] leading-[1.7] text-[#6d6d6d] md:text-[16px]">
+            <p className="max-w-[540px] text-[14px] leading-[1.7] text-[#6d6d6d] md:text-[16px]">
               At ByteSpace, our vibrant community of learners and creators is
               at the heart of what we do. Hear directly from those who have
               experienced the transformative journey of learning and creating
@@ -96,17 +96,17 @@ const CommunityTestimonials = () => {
 
               {/* Name + Role */}
               <div className="mt-4">
-                <h3 className="text-[14px] md:text-[20px] font-semibold leading-5 text-[#111111]">
+                <h3 className="text-[18px] md:text-[20px] font-semibold leading-5 text-[#111111]">
                   {testimonial.name}
                 </h3>
 
-                <p className="mt-0.5 text-[11px] md:text-[16px] font-light text-[#1557ff]">
+                <p className="mt-0.5 text-[12px] md:text-[16px] font-light text-[#1557ff]">
                   {testimonial.role}
                 </p>
               </div>
 
               {/* Review */}
-              <p className="mt-5 text-[12px] md:text-[16px] font-normal leading-[1.7] text-[#818181]">
+              <p className="mt-5 text-[14px] md:text-[16px] font-normal leading-[1.7] text-[#818181]">
                 {testimonial.review}
               </p>
             </article>
