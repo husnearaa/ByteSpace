@@ -54,7 +54,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full bg-[#0033E6]">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-transparent">
       <div className="relative h-16 border-x border-white/15">
         <GridLines />
 
